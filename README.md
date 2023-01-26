@@ -1,7 +1,8 @@
 # ESP32-OpenWeatherMap
 Adapted code to work on Adafruit ESP-32 TFT Feather
 
-Origional code: https://thesolaruniverse.wordpress.com/2021/04/03/my-esp32-wroom-32-ili9341-tft-openweathermap-station/comment-page-1/
+Origional code:
+https://thesolaruniverse.wordpress.com/2021/04/03/my-esp32-wroom-32-ili9341-tft-openweathermap-station/comment-page-1/
 
 You will need to create a free account with http://openweathermap.org
 
