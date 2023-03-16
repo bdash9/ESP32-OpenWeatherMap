@@ -232,8 +232,9 @@ void setup() {
    tft.setCursor (128,89);
    tft.print ("%");
    //tft.setCursor (133,102);
-   tft.setCursor (126,111);
-   tft.print ("m/s"); 
+   tft.setCursor (124,111);
+   //tft.print ("m/s"); 
+   tft.print("mph");
    
   // Text for DASH9 box, upper right
   //tft.setCursor (170,33);
@@ -404,7 +405,11 @@ void doTheHardWork (){
    tft.fillRect (60,99,65,15,BLACK);
    //tft.setCursor (69,110);
    tft.setCursor (65,109);
-   tft.print (myObject["wind"]["speed"]);   
+   //For wind speed in m/s:      
+   //tft.print (myObject["wind"]["speed"]);   
+   //For MPH wind speed (and comment out line above:
+   double windSpeed = double(myObject["wind"]["speed"]) * 2.23694; // Conversion factor from m/s to mph is 2.23694
+   tft.print(windSpeed, 1); // print the wind speed with one decimal place
 
   //box where wind direction -Ie. from: n,s,e,w
    tft.fillRect (65,121,40,15,BLACK); 
